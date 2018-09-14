@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 	
-	@IBOutlet weak var stacky: UIStackView!
+	@IBOutlet weak var stacky: TestScrollView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 		let label = UILabel()
 		label.text = "Hello"
 		
-		stacky.addArrangedSubview(label)
+		stacky.addTo(label)
 	}
 	
 }

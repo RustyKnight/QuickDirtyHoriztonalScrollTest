@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7094CC4B214BA34E0017282E /* TestScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7094CC4A214BA34E0017282E /* TestScrollView.swift */; };
+		7094CC4D214BA3D60017282E /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7094CC4C214BA3D60017282E /* PureLayout.framework */; };
+		7094CC4E214BA3D60017282E /* PureLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7094CC4C214BA3D60017282E /* PureLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70D2087D21466F49003D45B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2087C21466F49003D45B4 /* AppDelegate.swift */; };
 		70D2087F21466F49003D45B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2087E21466F49003D45B4 /* ViewController.swift */; };
 		70D2088221466F49003D45B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D2088021466F49003D45B4 /* Main.storyboard */; };
@@ -26,7 +29,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7094CC4F214BA3D60017282E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7094CC4E214BA3D60017282E /* PureLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7094CC4A214BA34E0017282E /* TestScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollView.swift; sourceTree = "<group>"; };
+		7094CC4C214BA3D60017282E /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		70D2087921466F49003D45B4 /* TestScrolly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScrolly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D2087C21466F49003D45B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D2087E21466F49003D45B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7094CC4D214BA3D60017282E /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +81,7 @@
 		70D2087021466F49003D45B4 = {
 			isa = PBXGroup;
 			children = (
+				7094CC4C214BA3D60017282E /* PureLayout.framework */,
 				70D2087B21466F49003D45B4 /* TestScrolly */,
 				70D2089021466F4A003D45B4 /* TestScrollyUITests */,
 				70D2087A21466F49003D45B4 /* Products */,
@@ -86,6 +107,7 @@
 				70D2088521466F4A003D45B4 /* LaunchScreen.storyboard */,
 				70D2088821466F4A003D45B4 /* Info.plist */,
 				70D2089C21466F65003D45B4 /* ASHorizontalScrollView.swift */,
+				7094CC4A214BA34E0017282E /* TestScrollView.swift */,
 			);
 			path = TestScrolly;
 			sourceTree = "<group>";
@@ -109,6 +131,7 @@
 				70D2087521466F49003D45B4 /* Sources */,
 				70D2087621466F49003D45B4 /* Frameworks */,
 				70D2087721466F49003D45B4 /* Resources */,
+				7094CC4F214BA3D60017282E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D2087F21466F49003D45B4 /* ViewController.swift in Sources */,
+				7094CC4B214BA34E0017282E /* TestScrollView.swift in Sources */,
 				70D2087D21466F49003D45B4 /* AppDelegate.swift in Sources */,
 				70D2089D21466F65003D45B4 /* ASHorizontalScrollView.swift in Sources */,
 			);
@@ -366,6 +390,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YWXH886EY3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestScrolly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -384,6 +412,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YWXH886EY3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestScrolly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

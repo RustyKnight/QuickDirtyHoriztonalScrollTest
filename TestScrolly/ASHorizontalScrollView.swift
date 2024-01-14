@@ -143,10 +143,6 @@ open class ASHorizontalScrollView: UIScrollView, UIScrollViewDelegate {
 				if let setting = marginSettings_736 {
 					return setting
 				}
-			case 1024:
-				if let setting = marginSettings_1024 {
-					return setting
-				}
 			case 1366:
 				if let setting = marginSettings_1366 {
 					return setting
